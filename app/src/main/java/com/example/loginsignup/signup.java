@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 public class signup extends AppCompatActivity {
     @Override
@@ -31,6 +32,10 @@ public class signup extends AppCompatActivity {
                 openactivitymain();
             }
         });
+
+    }
+    private void initializeViews() {
+        getWindow().setStatusBarColor(ContextCompat.getColor(signup.this, R.color.orange));
     }
     public void openactivitymain() {
         Intent intent= new Intent(this,MainActivity.class);

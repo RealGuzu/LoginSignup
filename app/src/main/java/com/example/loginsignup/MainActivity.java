@@ -1,6 +1,7 @@
 package com.example.loginsignup;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    } private void initializeViews() {
+        getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this, R.color.dark_gray));
     }
     public void opensignup() {
         Intent intent = new Intent(this,signup.class);
