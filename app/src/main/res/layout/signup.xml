@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:background="#201d26">
+
+    <TextView
+        android:id="@+id/createAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_acccount"
+        android:fontFamily="@font/hel"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:autofillHints=""
+        android:id="@+id/mailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/maild"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:fontFamily="@font/hel"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/createAccount"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/full_name"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:fontFamily="@font/hel"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/mailID"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:autofillHints="name"
+        />
+
+    <EditText
+        android:id="@+id/txtPasswrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pass"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:fontFamily="@font/hel"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtName"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:autofillHints="password"
+        />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/txtPasswrd"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/hel"
+        android:text="@string/create"
+        android:backgroundTint="#e1a715"
+        />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtlogin"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="#e1a715"
+        android:layout_below="@id/txtPasswrd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/hel"/>
+
+</RelativeLayout>
