@@ -15,6 +15,8 @@ public class signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup);
 
+        initializeViews(); // Call initializeViews() method to set status bar color
+
         Button btn = findViewById(R.id.btnCreate);
 
         TextView txt = findViewById(R.id.txtLogin);
